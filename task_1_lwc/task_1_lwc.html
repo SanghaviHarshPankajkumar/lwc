@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="File Upload Task_1" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+           
+            <input type="file" accept="image/*" onchange={openfileUpload}>
+        </div>
+        
+       
+      
+        <lightning-button variant="brand" label="Preview" title="Preview" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+        <div if:true={showclick}>
+            <c-task1-child-lwc imagerl={imageUrl}></c-task1-child-lwc> 
+        </div>
+        
+    </lightning-card>
+    
+</template>

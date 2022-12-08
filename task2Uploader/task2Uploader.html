@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="LWC File Upload Task_2" icon-name="custom:custom19">
+        <lightning-file-upload
+            label="Attach receipt"
+            name="fileUploader"
+            accept={acceptedFormats}
+            record-id={recordId}
+            onuploadfinished={handleUploadFinished}
+            multiple>
+    </lightning-file-upload>
+    </lightning-card>
+      <lightning-card><c-task2-file-table-show></c-task2-file-table-show></lightning-card>
+        <!-- <c-task2-file-table-show></c-task2-file-table-show> -->
+
+</template>

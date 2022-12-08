@@ -1,0 +1,25 @@
+<template>
+<lightning-card title="Show Contacts and Opportunity">
+    <h1></h1>
+    <div  class="slds-m-top_medium">
+        <lightning-card title="Contacts Releated to Account">
+            <lightning-datatable
+                    key-field="id"
+                    data={conList}
+                    columns={column1}>
+            </lightning-datatable>
+        </lightning-card>
+        
+    </div>
+    <div  class="slds-m-top_medium">
+        <lightning-card title="Opportunity Releated to Account">
+            <lightning-datatable
+            key-field="id"
+            data={oppList}
+            columns={column2}>
+    </lightning-datatable>
+        </lightning-card>
+    </div>
+       
+    </lightning-card>
+</template>
